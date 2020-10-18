@@ -10,9 +10,14 @@
 		23AC070B253C221100600577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC070A253C221100600577 /* AppDelegate.swift */; };
 		23AC070D253C221100600577 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC070C253C221100600577 /* SceneDelegate.swift */; };
 		23AC070F253C221100600577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC070E253C221100600577 /* ViewController.swift */; };
-		23AC0712253C221100600577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AC0710253C221100600577 /* Main.storyboard */; };
 		23AC0714253C221300600577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23AC0713253C221300600577 /* Assets.xcassets */; };
 		23AC0717253C221300600577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23AC0715253C221300600577 /* LaunchScreen.storyboard */; };
+		23AC0726253C22AC00600577 /* PlanetInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC0725253C22AC00600577 /* PlanetInteractor.swift */; };
+		23AC072A253C22BB00600577 /* DummyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC0729253C22BB00600577 /* DummyDate.swift */; };
+		23AC072D253C232D00600577 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC072C253C232D00600577 /* Planet.swift */; };
+		23AC0730253C239600600577 /* PlanetContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC072F253C239600600577 /* PlanetContract.swift */; };
+		23AC0733253C259800600577 /* PlanetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC0732253C259800600577 /* PlanetPresenter.swift */; };
+		23AC0736253C271600600577 /* PlanetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC0735253C271600600577 /* PlanetRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,15 @@
 		23AC070A253C221100600577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23AC070C253C221100600577 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		23AC070E253C221100600577 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23AC0711253C221100600577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23AC0713253C221300600577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23AC0716253C221300600577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23AC0718253C221300600577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23AC0725253C22AC00600577 /* PlanetInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetInteractor.swift; sourceTree = "<group>"; };
+		23AC0729253C22BB00600577 /* DummyDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDate.swift; sourceTree = "<group>"; };
+		23AC072C253C232D00600577 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		23AC072F253C239600600577 /* PlanetContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetContract.swift; sourceTree = "<group>"; };
+		23AC0732253C259800600577 /* PlanetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPresenter.swift; sourceTree = "<group>"; };
+		23AC0735253C271600600577 /* PlanetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		23AC0709253C221100600577 /* VIPERExercise */ = {
 			isa = PBXGroup;
 			children = (
+				23AC0724253C226C00600577 /* Protocol */,
+				23AC071F253C221E00600577 /* Entity */,
+				23AC0720253C222A00600577 /* Interactor */,
+				23AC0721253C223200600577 /* Presenter */,
+				23AC0723253C224500600577 /* Router */,
+				23AC0722253C223A00600577 /* Views */,
 				23AC070A253C221100600577 /* AppDelegate.swift */,
 				23AC070C253C221100600577 /* SceneDelegate.swift */,
-				23AC070E253C221100600577 /* ViewController.swift */,
-				23AC0710253C221100600577 /* Main.storyboard */,
 				23AC0713253C221300600577 /* Assets.xcassets */,
 				23AC0715253C221300600577 /* LaunchScreen.storyboard */,
 				23AC0718253C221300600577 /* Info.plist */,
 			);
 			path = VIPERExercise;
+			sourceTree = "<group>";
+		};
+		23AC071F253C221E00600577 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				23AC072C253C232D00600577 /* Planet.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		23AC0720253C222A00600577 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				23AC0725253C22AC00600577 /* PlanetInteractor.swift */,
+				23AC0729253C22BB00600577 /* DummyDate.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		23AC0721253C223200600577 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				23AC0732253C259800600577 /* PlanetPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		23AC0722253C223A00600577 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23AC070E253C221100600577 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23AC0723253C224500600577 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				23AC0735253C271600600577 /* PlanetRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		23AC0724253C226C00600577 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				23AC072F253C239600600577 /* PlanetContract.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +189,6 @@
 			files = (
 				23AC0717253C221300600577 /* LaunchScreen.storyboard in Resources */,
 				23AC0714253C221300600577 /* Assets.xcassets in Resources */,
-				23AC0712253C221100600577 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AC072A253C22BB00600577 /* DummyDate.swift in Sources */,
+				23AC0736253C271600600577 /* PlanetRouter.swift in Sources */,
+				23AC0726253C22AC00600577 /* PlanetInteractor.swift in Sources */,
 				23AC070F253C221100600577 /* ViewController.swift in Sources */,
+				23AC0730253C239600600577 /* PlanetContract.swift in Sources */,
+				23AC0733253C259800600577 /* PlanetPresenter.swift in Sources */,
+				23AC072D253C232D00600577 /* Planet.swift in Sources */,
 				23AC070B253C221100600577 /* AppDelegate.swift in Sources */,
 				23AC070D253C221100600577 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +214,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		23AC0710253C221100600577 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23AC0711253C221100600577 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		23AC0715253C221300600577 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
